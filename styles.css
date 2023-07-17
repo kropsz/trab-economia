@@ -1,0 +1,103 @@
+*{
+    box-sizing:  border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+}
+
+:root{
+    --color-primary--: #F97B22;
+    --color-secondary--: #7C9070;
+}
+
+body{
+    background: #D3C49C;
+    padding: 0 1rem;
+}
+
+header,
+.office,
+.lessons-section,
+footer{
+    border-color: black;
+    border-style: solid;
+    border-width: 0 1px 1px 1px;
+    padding: 1.25;
+}
+
+header img{
+    display: block;
+    margin: 1rem auto;
+}
+
+header nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+nav a{
+    color: black;
+    font-size: 1.25rem;
+    padding: .5rem;
+    text-decoration: none;
+}
+
+header nav a:nth-child(2n-1){
+    text-align: right;
+}
+
+.button{
+    background-color: var(--color-secondary--);
+    border: 2px solid black;
+    box-shadow: 4px 4px 0 black;
+    color: black;
+    display: block;
+    font-size: 1.25rem;
+    padding: .75rem 1rem;
+    max-width: 14rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.office{
+    padding-right: 0;
+    padding-bottom: 16rem;
+}
+
+.office img{
+    display: block;
+    margin: 1.25rem 0 0 auto;
+    max-width: 100%;
+    
+
+}
+
+.mt-1{
+    margin-top: 1rem;
+}
+
+.mt-2{
+    margin-top: 2rem;
+}
+
+.mb-1{
+    margin-top: 1rem;
+}
+
+.mb-2{
+    margin-top: 2rem;
+}
+
+.mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-primary{
+    color:var(--color-primary--)
+}
+
+.text-center{
+    text-align: center;
+}
