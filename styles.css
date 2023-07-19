@@ -11,7 +11,7 @@
 }
 
 body{
-    background: #D3C49C;
+    background: #CEBC8F;
     padding: 0 1rem;
 }
 
@@ -84,10 +84,116 @@ header nav a:nth-child(2n-1){
     display: block;
     margin: 1.25rem 0 0 auto;
     max-width: 100%;
-    
-
 }
 
+h1{
+    font-size: 3rem;
+    line-height: 100%;
+    padding: 1.2rem;
+    padding-bottom: 0;
+}
+
+h2{
+    font-size: 2.5rem;
+}
+
+.office p{
+    font-size: 1.25rem;
+    padding: 1.2rem;
+    padding-top: 0;
+}
+
+.office .button{
+    position: relative;
+}
+
+.office .button::after{
+    content: '';
+    background: url(img/arrow-curve.svg);
+    position: absolute;
+    top: 5rem;
+    right: -2.6rem;
+    height: 48px;
+    width: 132px;
+}
+
+.lessons-section{
+    padding-bottom: 8rem;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.25rem;
+    margin-top: -8rem;
+    margin-bottom: 4rem;
+    padding: 1.2rem;
+}
+
+.card{
+    background-color: var(--color-primary--) ;
+    border: 2px solid black;
+    box-shadow: 4px 4px 0 black;
+    max-width: 17rem;
+    padding: 2rem 0 0 2rem;
+    
+}
+
+
+.card.card:nth-child(2n){
+    align-self: end;
+    background-color: var(--color-secondary--);
+}
+
+.card img{
+    margin-top: -2.3rem;
+    margin-left: -2rem;
+}
+
+.card strong{
+    display: block;
+    font-size: 1.3rem;
+}
+
+.card p{
+    display: block;
+    font-size: 1rem;
+    margin: 0.3rem;
+}
+
+.card a{
+    display: block;
+    margin: 3rem 0 0 auto;
+    width: fit-content;
+}
+
+footer{
+    border-bottom: 0;
+    padding: 1rem 1.25rem 4rem;
+}
+
+footer h3{
+    display: block;
+    font-size: 1.3rem;
+    margin-bottom: 0rem;
+}
+
+.news label{
+    display: block;
+    font-size: 1.5rem;
+}
+
+.news input{
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    box-shadow: 4px 4px 0 black;
+    font-size: 1.5rem;
+    padding: .5rem;
+    width: 100%;
+}
+
+/* Uitlitarios*/
 .mt-1{
     margin-top: 1rem;
 }
