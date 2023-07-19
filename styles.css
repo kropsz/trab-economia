@@ -21,7 +21,7 @@ header,
 footer{
     border-color: black;
     border-style: solid;
-    border-width: 0 1px 1px 1px;
+    border-width: 0.3px 1px 1px 1px;
     padding: 1.25;
 }
 
@@ -46,15 +46,30 @@ header nav a:nth-child(2n-1){
     text-align: right;
 }
 
+.button-nav{
+    background-color: var(--color-secondary--);
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    box-shadow: 4px 4px 0 black;
+    color: black;
+    display: flex;
+    font-size: 1.25rem;
+    padding: .5rem 1.5rem;
+    max-width: 6em;
+    margin-bottom: 2rem;
+   
+}
+
 .button{
     background-color: var(--color-secondary--);
     border: 2px solid black;
     box-shadow: 4px 4px 0 black;
+    border-radius: 0.5rem;
     color: black;
     display: block;
     font-size: 1.25rem;
     padding: .75rem 1rem;
-    max-width: 14rem;
+    max-width: 13rem;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
