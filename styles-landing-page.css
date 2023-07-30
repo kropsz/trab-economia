@@ -1,0 +1,289 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+}
+
+:root {
+  --color-primary--: #f97b22;
+  --color-secondary--: #7c9070;
+}
+
+body {
+  background: #cebc8f;
+  padding: 0 1rem;
+}
+
+header,
+.office,
+.lessons-section,
+footer {
+  border-color: black;
+  border-style: solid;
+  border-width: 0.3px 1px 1px 1px;
+  padding: 1.25;
+}
+
+header img {
+  display: block;
+}
+
+header nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 1rem auto 0;
+}
+
+nav a {
+  color: black;
+  font-size: 1.25rem;
+  padding: 0.5rem;
+  text-decoration: none;
+}
+
+header nav a:nth-child(2n-1) {
+  text-align: right;
+}
+
+.button-nav {
+  background-color: var(--color-secondary--);
+  border: 2px solid black;
+  border-radius: 0.5rem;
+  box-shadow: 4px 4px 0 black;
+  color: black;
+  display: flex;
+  font-size: 1.25rem;
+  padding: 0.5rem 1.5rem;
+  max-width: 6em;
+  margin-bottom: 2rem;
+}
+
+.button {
+  background-color: var(--color-secondary--);
+  border: 2px solid black;
+  box-shadow: 4px 4px 0 black;
+  border-radius: 0.5rem;
+  color: black;
+  display: block;
+  font-size: 1.25rem;
+  padding: 0.75rem 1rem;
+  max-width: 13rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.office {
+  padding-right: 0;
+  padding-bottom: 16rem;
+}
+
+.office img {
+  display: block;
+  margin: 1.5rem 0 0 auto;
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 100%;
+  padding: 1.2rem;
+  padding-bottom: 0;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+.office p {
+  font-size: 1.25rem;
+  padding: 1.2rem;
+  padding-top: 0;
+}
+
+.office .button {
+  position: relative;
+}
+
+.office .button::after {
+  content: "";
+  background: url(img/arrow-curve.svg);
+  position: absolute;
+  top: 5rem;
+  right: -2.6rem;
+  height: 48px;
+  width: 132px;
+}
+
+.lessons-section {
+  padding-bottom: 8rem;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.25rem;
+  margin-top: -8rem;
+  margin-bottom: 4rem;
+  padding: 1.2rem;
+}
+
+.card {
+  background-color: var(--color-primary--);
+  border: 2px solid black;
+  box-shadow: 4px 4px 0 black;
+  max-width: 17rem;
+  padding: 2rem 0 0 2rem;
+}
+
+.card.card:nth-child(2n) {
+  align-self: end;
+  background-color: var(--color-secondary--);
+}
+
+.card img {
+  margin-top: -2.3rem;
+  margin-left: -2rem;
+}
+
+.card strong {
+  display: block;
+  font-size: 1.3rem;
+}
+
+.card p {
+  display: block;
+  font-size: 1rem;
+  margin: 0.3rem;
+}
+
+.card a {
+  display: block;
+  margin: 3rem 0 0 auto;
+  width: fit-content;
+}
+
+footer {
+  border-bottom: 0;
+  padding: 1rem 1.25rem 4rem;
+}
+
+footer h3 {
+  display: block;
+  font-size: 1.3rem;
+  margin-bottom: 0rem;
+}
+
+.news label {
+  display: block;
+  font-size: 1.5rem;
+}
+
+.news input {
+  border: 2px solid black;
+  border-radius: 0.5rem;
+  box-shadow: 4px 4px 0 black;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+/* Uitlitarios*/
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mb-1 {
+  margin-top: 1rem;
+}
+
+.mb-2 {
+  margin-top: 2rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-primary {
+  color: var(--color-primary--);
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Responsividade*/
+
+@media screen and (min-width: 40rem) {
+  header nav {
+    display: block;
+    text-align: center;
+  }
+
+  .cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card:nth-child(2n) {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (min-width: 50rem) {
+  header div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  header img,
+  header nav,
+  header {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 72rem) {
+    h1, h2{
+        font-size: 4rem;
+    }
+  
+    .container {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 72rem;
+  }
+
+  .container.row-reverse {
+    flex-direction: row-reverse;
+  }
+
+  .about-column {
+    flex: 2;
+  }
+
+  .about-column p {
+    font-size: 1.25rem;
+    max-width: 16rem;
+  }
+
+  .news-form {
+    flex: 3;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .container {
+    max-width: 80rem;
+  }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="video-container">
+      <h1>Título do Vídeo</h1>
+      <p>Pequeno texto de introdução sobre o conteúdo do vídeo.</p>
+      <div class="video-wrapper">
+        <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/KkK-PSqsIZI"
+        title="Vídeo do YouTube"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      </div>
+      <div class="video-shadow"></div>
+    </div>
+    <div class="quiz-wrapper">
+      <h2>Pergunta do Quiz:</h2>
+      <form id="quizForm">
+        <label class="custom-radio">
+          <input type="radio" name="answer" value="a">
+          <span class="option-label">Alternativa A</span>
+        </label>
+        <label class="custom-radio">
+          <input type="radio" name="answer" value="b">
+          <span class="option-label">Alternativa B</span>
+        </label>
+        <label class="custom-radio">
+          <input type="radio" name="answer" value="c">
+          <span class="option-label">Alternativa C</span>
+        </label>
+        <label class="custom-radio">
+          <input type="radio" name="answer" value="d">
+          <span class="option-label">Alternativa D</span>
+        </label>
+        <button type="submit">Enviar Resposta</button>
+      </form>
+      <div class="feedback">
+        <p class="feedback-message">Resposta correta!</p>
+        <p class="feedback-explanation">Explicação da resposta correta.</p>
+      </div>
+    </div>
+    <div class="navigation">
+      <button class="btn-prev" disabled>Anterior</button>
+      <button class="btn-next">Próximo</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
