@@ -91,13 +91,7 @@ body {
     cursor: pointer;
     transition: background-color 0.2s ease, transform 0.3s ease;
   }
-  
-  .custom-radio input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-  }
-  
+
   .custom-radio .option-label {
     flex: 1;
     padding-left: 15px;
@@ -105,31 +99,66 @@ body {
     color: #fff;
   }
   
-  /* Estilos da alternativa selecionada */
-  .custom-radio input:checked ~ .custom-radio {
-    background-color: #007bff;
-  }
-  
-  .custom-radio input:checked ~ .custom-radio .option-label {
-    font-weight: bold;
-    color: #fff;
-  }
-  
-  .custom-radio input:checked ~ .custom-radio::before {
-    content: '\2713'; /* Adiciona um marcador de check (✓) antes da alternativa selecionada */
+  .custom-radio input {
     position: absolute;
-    left: 8px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 18px;
-    color: #fff;
+    opacity: 0;
+    cursor: pointer;
   }
-  
-  /* Animações das alternativas */
-  .custom-radio:hover {
-    background-color: #5f6f58;
-    transform: scale(1.03);
-  }
+
+  /* ... (seus estilos atuais) */
+
+.final-message {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn-inicio {
+  padding: 10px 20px;
+  background-color: #7c9070;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.3s ease;
+}
+
+.btn-inicio:hover {
+  background-color: #5f6f58;
+  transform: scale(1.03);
+}
+
+
+  /* Estilos da alternativa selecionada */
+.custom-radio input:checked ~ .option-label {
+  font-weight: bold;
+  color: #000000; /* Cor que indica seleção */
+}
+
+.custom-radio input:checked ~ .custom-radio {
+  background-color: rgba(0, 123, 255, 0.1); /* Fundo levemente destacado */
+  border: 1px solid #000000;
+}
+
+.custom-radio input:checked ~ .custom-radio::before {
+  content: '\2713'; /* Adiciona um marcador de check (✓) antes da alternativa selecionada */
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #000000; /* Cor que indica seleção */
+}
+
+/* Animações das alternativas */
+.custom-radio {
+  transition: background-color 0.2s ease, transform 0.3s ease;
+}
+
+.custom-radio:hover {
+  background-color: #5f6f58;
+  transform: scale(1.03);
+}
+
   
   /* Estilos do botão de enviar resposta e dos botões de navegação */
   button[type="submit"],
@@ -150,7 +179,7 @@ body {
     background-color: #5f6f58;
     transform: scale(1.03);
   }
-  
+
   .btn-prev:disabled,
   .btn-next:disabled {
     background-color: #c0c0c0;

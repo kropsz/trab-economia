@@ -8,22 +8,6 @@
 </head>
 <body>
   <div class="container">
-    <div class="video-container">
-      <h1>Título do Vídeo</h1>
-      <p>Pequeno texto de introdução sobre o conteúdo do vídeo.</p>
-      <div class="video-wrapper">
-        <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/KkK-PSqsIZI"
-        title="Vídeo do YouTube"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
-      </div>
-      <div class="video-shadow"></div>
-    </div>
     <div class="quiz-wrapper">
       <h2>Pergunta do Quiz:</h2>
       <form id="quizForm">
@@ -53,7 +37,11 @@
     <div class="navigation">
       <button class="btn-prev" disabled>Anterior</button>
       <button class="btn-next">Próximo</button>
+      <button class="btn-next btn-inicio" onclick="redirectToHome()">Página inicial</button>
+
+
     </div>
+    
   </div>
   <script src="script.js"></script>
 </body>

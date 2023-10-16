@@ -35,6 +35,7 @@ header nav {
   margin: 1rem auto 0;
 }
 
+
 nav a {
   color: black;
   font-size: 1.25rem;
@@ -84,6 +85,19 @@ header nav a:nth-child(2n-1) {
   margin: 1.5rem 0 0 auto;
   max-width: 100%;
 }
+.office p {
+  max-width: 600px; 
+  margin: 60px auto 10px;
+  text-align: center; 
+  margin-left: 13rem ;
+  font-size: 1.7rem;
+  display: block;
+  padding: 1.2rem;
+  padding-top: 0;
+  border-radius: 1rem;
+  border: 2px solid black;
+  padding: 10px; /* Adicione um pouco de padding para espaçamento interno */
+}
 
 h1 {
   font-size: 3rem;
@@ -94,12 +108,6 @@ h1 {
 
 h2 {
   font-size: 2.5rem;
-}
-
-.office p {
-  font-size: 1.25rem;
-  padding: 1.2rem;
-  padding-top: 0;
 }
 
 .office .button {
@@ -175,7 +183,6 @@ footer h3 {
   font-size: 1.3rem;
   margin-bottom: 0rem;
 }
-
 .news label {
   display: block;
   font-size: 1.5rem;
